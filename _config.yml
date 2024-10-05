@@ -89,13 +89,13 @@ content:
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
     content:
-      - layout: left
+      - layout: top-middle
         title: School of Electrical Engineering and Informatics, Institut Teknologi Bandung
         caption: 2020 - 2023
         sub_title: M.Sc. Control and Intelligent Systems
         description: | # this will include new lines to allow paragraphs
           **Thesis**: LiDAR-Based Three-Dimensional Object Detection for Autonomous Tram Perception System.
-      - layout: left
+      - layout: top-middle
         title: Department of Electronics Engineering, Politeknik Elektronika Negeri Surabaya
         caption: 2016 - 2018
         sub_title: B.ASc. in Electronics Engineering
