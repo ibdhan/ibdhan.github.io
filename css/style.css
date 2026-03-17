@@ -5,33 +5,43 @@
 */
 :root {
     /* Color Palette - Academic Blue & Clean Neutrals */
-    --primary-color: #1a365d;       /* Deep Academic Blue */
-    --primary-light: #2c5282;       /* Lighter Blue */
-    --secondary-color: #718096;     /* Slate Gray */
-    --accent-color: #3182ce;        /* Bright Blue Accent */
-    
-    --text-main: #2d3748;           /* Dark slate for high readability */
-    --text-light: #4a5568;          /* Medium slate */
-    --text-muted: #a0aec0;          /* Light slate */
-    
-    --bg-main: #ffffff;             /* Crisp white */
-    --bg-light: #f7fafc;            /* Very light bluish gray for sections */
-    --bg-dark: #1a202c;             /* Dark background for footer */
-    
+    --primary-color: #1a365d;
+    /* Deep Academic Blue */
+    --primary-light: #2c5282;
+    /* Lighter Blue */
+    --secondary-color: #718096;
+    /* Slate Gray */
+    --accent-color: #3182ce;
+    /* Bright Blue Accent */
+
+    --text-main: #2d3748;
+    /* Dark slate for high readability */
+    --text-light: #4a5568;
+    /* Medium slate */
+    --text-muted: #a0aec0;
+    /* Light slate */
+
+    --bg-main: #ffffff;
+    /* Crisp white */
+    --bg-light: #f7fafc;
+    /* Very light bluish gray for sections */
+    --bg-dark: #1a202c;
+    /* Dark background for footer */
+
     --border-color: #e2e8f0;
-    
+
     /* Typography */
     --font-main: 'Inter', system-ui, -apple-system, sans-serif;
-    
+
     /* Layout */
     --max-width: 1100px;
     --section-padding: 80px 0;
-    
+
     /* Shadows */
-    --shadow-sm: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    
+
     /* Transitions */
     --transition: all 0.3s ease;
 }
@@ -55,7 +65,12 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 700;
     color: var(--primary-color);
     line-height: 1.2;
@@ -276,7 +291,8 @@ img {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding-top: 80px; /* Offset for sticky header */
+    padding-top: 80px;
+    /* Offset for sticky header */
     background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
 }
 
@@ -508,7 +524,7 @@ img {
         align-items: center;
         text-align: center;
     }
-    
+
     .resume-item {
         grid-template-columns: 1fr;
         gap: 0.5rem;
@@ -566,7 +582,8 @@ img {
 }
 
 .text-link:hover {
-    gap: 0.75rem; /* slight movement on hover */
+    gap: 0.75rem;
+    /* slight movement on hover */
 }
 
 /* 
@@ -722,7 +739,8 @@ img {
     margin-bottom: 0.5rem;
 }
 
-.footer-info p, .footer-contact p {
+.footer-info p,
+.footer-contact p {
     color: var(--text-muted);
 }
 
@@ -779,20 +797,20 @@ img {
         text-align: center;
         padding-top: 2rem;
     }
-    
+
     .hero-description {
         margin: 0 auto 2rem auto;
     }
-    
+
     .hero-buttons {
         justify-content: center;
     }
-    
+
     .publication-item {
         flex-direction: column;
         gap: 0.5rem;
     }
-    
+
     .pub-year {
         font-size: 1.2rem;
     }
@@ -815,12 +833,14 @@ img {
         background-color: white;
         padding: 1rem 0;
         box-shadow: var(--shadow-md);
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); /* Hidden state */
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        /* Hidden state */
         transition: clip-path 0.4s ease-in-out;
     }
 
     .nav-menu.active {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Visible state */
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        /* Visible state */
     }
 
     .nav-list {
@@ -828,11 +848,11 @@ img {
         align-items: center;
         gap: 1.5rem;
     }
-    
+
     .hero-title {
         font-size: 2.8rem;
     }
-    
+
     .hero-subtitle {
         font-size: 1.4rem;
     }
@@ -842,12 +862,12 @@ img {
     .hero-title {
         font-size: 2.2rem;
     }
-    
+
     .hero-buttons {
         flex-direction: column;
         width: 100%;
     }
-    
+
     .btn {
         width: 100%;
     }
@@ -953,18 +973,102 @@ img {
     .timeline-container {
         padding-left: 1.5rem;
     }
-    
+
     .timeline-container::before {
         left: 5px;
     }
-    
+
     .timeline-dot {
         left: -19px;
         width: 10px;
         height: 10px;
     }
-    
+
     .timeline-content:hover {
         transform: none;
+    }
+}
+
+/* 
+=======================================
+   RESEARCH LIST VIEW
+=======================================
+*/
+.research-list-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.research-list-item {
+    background: white;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    border-left: 5px solid var(--accent-color);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    gap: 0.25rem;
+    align-items: flex-start;
+    transition: var(--transition);
+}
+
+.research-list-item:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+    border-left-color: var(--primary-color);
+}
+
+.research-meta {
+    min-width: 120px;
+}
+
+.research-year {
+    font-weight: 700;
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.research-details {
+    flex: 1;
+}
+
+.research-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.25rem;
+    color: var(--primary-color);
+}
+
+.research-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.research-role,
+.research-leader {
+    font-size: 0.95rem;
+    margin-bottom: 0;
+    color: var(--text-light);
+}
+
+.research-role strong,
+.research-leader strong {
+    color: var(--text-main);
+}
+
+@media (max-width: 768px) {
+    .research-list-item {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1.5rem;
+    }
+
+    .research-meta {
+        min-width: auto;
     }
 }
