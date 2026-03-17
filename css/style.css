@@ -852,3 +852,119 @@ img {
         width: 100%;
     }
 }
+
+/* 
+=======================================
+   TIMELINE LIST VIEW
+=======================================
+*/
+.timeline-container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--border-color);
+}
+
+.timeline-year {
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.timeline-year h3 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    background: var(--bg-main);
+    display: inline-block;
+    padding-right: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.timeline-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -29.5px;
+    top: 8px;
+    width: 14px;
+    height: 14px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 0 2px var(--accent-color);
+    z-index: 2;
+}
+
+.timeline-content {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.timeline-content:hover {
+    transform: translateX(10px);
+    border-color: var(--accent-color);
+    box-shadow: var(--shadow-md);
+}
+
+.timeline-content h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.timeline-content .course-level {
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+.timeline-content p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .timeline-container {
+        padding-left: 1.5rem;
+    }
+    
+    .timeline-container::before {
+        left: 5px;
+    }
+    
+    .timeline-dot {
+        left: -19px;
+        width: 10px;
+        height: 10px;
+    }
+    
+    .timeline-content:hover {
+        transform: none;
+    }
+}
