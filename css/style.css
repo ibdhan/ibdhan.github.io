@@ -995,16 +995,16 @@ img {
 =======================================
 */
 .research-list-container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 0.75rem;
 }
 
 .research-list-item {
     background: white;
-    padding: 1.5rem 2rem;
+    padding: 0.8rem 1.2rem;
     border-radius: 8px;
     border-left: 5px solid var(--accent-color);
     box-shadow: var(--shadow-sm);
@@ -1038,14 +1038,14 @@ img {
 
 .research-title {
     font-size: 1.3rem;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.1rem;
     color: var(--primary-color);
 }
 
 .research-info {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 1rem;
     align-items: center;
 }
 
