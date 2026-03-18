@@ -51,13 +51,23 @@ document.addEventListener('DOMContentLoaded', () => {
         // Active Link State based on Current Page URL
         const navLinks = document.querySelectorAll('.nav-link');
         const windowPathname = window.location.pathname;
-        const windowFilename = windowPathname.split('/').pop() || 'index.html';
+        
+        // Helper to normalize paths for comparison
+        const normalizePath = (path) => {
+            // Remove trailing slashes and common extensions for comparison
+            let normalized = path.replace(/\/$/, '').replace('.html', '');
+            // If path is empty, it refers to the root/index
+            return normalized || '/index';
+        };
+
+        const currentNormalizedPath = normalizePath(windowPathname);
 
         navLinks.forEach(link => {
-            const navLinkFilename = new URL(link.href, window.location.href).pathname.split('/').pop();
+            const linkPathname = new URL(link.href, window.location.href).pathname;
+            const linkNormalizedPath = normalizePath(linkPathname);
             
-            // Check if the link's filename matches the current window's filename
-            if (navLinkFilename === windowFilename || (windowFilename === '' && navLinkFilename === 'index.html')) {
+            if (currentNormalizedPath === linkNormalizedPath || 
+               (currentNormalizedPath === '/index' && linkNormalizedPath === '/')) {
                 link.classList.add('active');
             } else {
                 link.classList.remove('active');
