@@ -879,7 +879,7 @@ img {
 =======================================
 */
 .timeline-container {
-    max-width: 800px;
+    max-width: 1100px;
     margin: 0 auto;
     position: relative;
     padding-left: 2rem;
@@ -896,14 +896,14 @@ img {
 }
 
 .timeline-year {
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     position: relative;
 }
 
 .timeline-year h3 {
     font-size: 1.8rem;
     color: var(--primary-color);
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.75rem;
     background: var(--bg-main);
     display: inline-block;
     padding-right: 1rem;
@@ -914,7 +914,7 @@ img {
 .timeline-list {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 0.75rem;
 }
 
 .timeline-item {
@@ -937,7 +937,7 @@ img {
 
 .timeline-content {
     background: white;
-    padding: 1.5rem;
+    padding: 0.8rem 2rem;
     border-radius: 8px;
     border: 1px solid var(--border-color);
     box-shadow: var(--shadow-sm);
@@ -950,10 +950,8 @@ img {
     box-shadow: var(--shadow-md);
 }
 
-.timeline-content h4 {
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-    color: var(--primary-color);
+.timeline-content h4:last-child {
+    margin-bottom: 0;
 }
 
 .timeline-content .course-level {
