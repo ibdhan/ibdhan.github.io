@@ -664,14 +664,14 @@ img {
 =======================================
 */
 .publications-list {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 .publication-item {
     display: flex;
-    gap: 2rem;
-    padding: 2rem 0;
+    gap: 1rem;
+    padding: 0.75rem 0;
     border-bottom: 1px solid var(--border-color);
 }
 
@@ -688,7 +688,7 @@ img {
 
 .pub-title {
     font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.2rem;
     color: var(--primary-color);
 }
 
@@ -699,7 +699,7 @@ img {
 
 .pub-venue {
     color: var(--text-light);
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .pub-links {
