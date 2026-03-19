@@ -664,7 +664,7 @@ img {
 =======================================
 */
 .publications-list {
-    max-width: 1000px;
+    max-width: 1200;
     margin: 0 auto;
 }
 
@@ -879,7 +879,7 @@ img {
 =======================================
 */
 .timeline-container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     position: relative;
     padding-left: 2rem;
@@ -993,7 +993,7 @@ img {
 =======================================
 */
 .research-list-container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
